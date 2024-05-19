@@ -1,0 +1,345 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Header styles */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+nav ul li a {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  margin-right: 20px; /* Add margin to create space between logo and search bar */
+  color: #fff;
+}
+
+.logo img {
+  width: 100px; /* Adjust the width as needed */
+}
+
+.search-bar {
+  display: flex; /* Use flexbox to align items */
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  margin-right: 10px; /* Add some space between input and button */
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Adjust color as needed */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Main navigation styles */
+nav {
+  margin-left: auto; /* Push navigation links to the right */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff; /* Adjust color as needed */
+}
+
+/* Change color on hover */
+nav ul li a:hover {
+  color: blue;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* Change color and add underline on hover */
+.secondary-nav ul li a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Media queries for responsiveness */
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .main-nav {
+    order: -1; /* Move the main navigation to the top */
+    margin-bottom: 20px; /* Add space below the main navigation */
+  }
+
+
+
+  .search-bar {
+    margin-bottom: 20px; /* Add space below the search bar */
+  }
+
+  .search-bar input {
+    width: 100%; /* Take up full width */
+    margin-right: 0; /* Remove margin */
+  }
+
+ 
+}
+
+/* styles.css */
+
+/* Trip starts section */
+.trip-starts {
+  text-align: center;
+  margin-top: 50px; /* Adjust margin as needed */
+}
+
+.trip-starts h1 {
+  font-size: 24px; /* Adjust font size as needed */
+    background-color: rgba(15, 41, 77, .8);
+ /* Adjust color as needed */
+ color: #fff;
+}
+/* Trip navigation styles */
+.trip-nav {
+  background-color: rgba(15, 41, 77, .8); /* Background color */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 30px; /* Add border radius */
+  width: 50%; /* Set a specific width */
+  margin: 0 auto; /* Center the navigation */
+}
+
+.trip-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.trip-nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  border-right: 1px solid #fff; /* Add border to separate items */
+  padding-right: 10px; /* Add padding to separate items */
+}
+
+.trip-nav ul li:last-child {
+  border-right: none; /* Remove border from last item */
+}
+
+.trip-nav ul li a {
+  text-decoration: none;
+  color: #fff; /* Adjust color as needed */
+  transition: color 0.3s; /* Add transition effect */
+}
+
+/* Change color and add underline on hover */
+.trip-nav ul li a:hover {
+  color: lightblue;
+}
+/* Search container styles */
+/* Search container styles */
+.search-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .search-container {
+      flex-direction: column;
+  }
+}
+
+
+/* Search container styles */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  border-top-right-radius:25%;
+    background-color: aliceblue;
+    border-top-left-radius:25%;
+
+}
+
+/* Search content styles */
+.search-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Destination input styles */
+.destination input {
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+/* Date picker styles */
+.date-picker {
+  display: flex;
+  margin-right: 10px;
+}
+
+.date-picker input {
+  padding: 10px;
+  width: 120px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+/* Room type dropdown styles */
+.room-type select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+/* Search button styles */
+.search-btn button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Background container styles */
+.background-container {
+  background-image: url('maldives-1993704_640.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+  background-size: cover; /* Scale the background image to cover the entire container */
+  background-position: center bottom; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  height: 50vh; /* Set the height of the container to fill the viewport height */
+}
+/* Header styles */
+.departure-info {
+  font-weight: bold;
+}
+
+.last-updated {
+  color: #555;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center; /* Center the tabs */
+  padding: 10px 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.tab.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.flight-selection {
+  padding: 20px;
+}
+
+.selection {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.airline-logo {
+  margin-right: 20px;
+}
+
+.airline-logo img {
+  width: 100px;
+}
+
+.details {
+  flex: 1;
+  padding: 10px;
+}
+
+.details .divider {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.price .select-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.amenities {
+  display: flex;
+  flex-wrap: wrap; /* Wrap icons to the next line if needed */
+  justify-content: center; /* Center icons horizontally */
+  padding: 10px;
+}
+
+.amenities i {
+  margin: 0 5px; /* Add some space between icons */
+  color: #007bff;
+}
+
+.price {
+  margin-left: auto; /* Move TRY 5,457 and Select to the right */
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+/* Center the departure and duration times */
+.departure-info,
+.last-updated,
+.details,
+.price {
+  text-align: center;
+}
+.con{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 27px;
+  background-color: #e9e1e1;
+}

@@ -1,0 +1,298 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Header styles */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+nav ul li a {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  margin-right: 20px; /* Add margin to create space between logo and search bar */
+  color: #fff;
+}
+
+.logo img {
+  width: 100px; /* Adjust the width as needed */
+}
+
+.search-bar {
+  display: flex; /* Use flexbox to align items */
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  margin-right: 10px; /* Add some space between input and button */
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Adjust color as needed */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Main navigation styles */
+nav {
+  margin-left: auto; /* Push navigation links to the right */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff; /* Adjust color as needed */
+}
+
+/* Change color on hover */
+nav ul li a:hover {
+  color: blue;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* Change color and add underline on hover */
+.secondary-nav ul li a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Media queries for responsiveness */
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .main-nav {
+    order: -1; /* Move the main navigation to the top */
+    margin-bottom: 20px; /* Add space below the main navigation */
+  }
+
+
+
+  .search-bar {
+    margin-bottom: 20px; /* Add space below the search bar */
+  }
+
+  .search-bar input {
+    width: 100%; /* Take up full width */
+    margin-right: 0; /* Remove margin */
+  }
+
+ 
+}
+
+/* styles.css */
+
+/* Trip starts section */
+.trip-starts {
+  text-align: center;
+  margin-top: 50px; /* Adjust margin as needed */
+}
+
+.trip-starts h1 {
+  font-size: 24px; /* Adjust font size as needed */
+    background-color: rgba(15, 41, 77, .8);
+ /* Adjust color as needed */
+ color: #fff;
+}
+/* Trip navigation styles */
+.trip-nav {
+  background-color: rgba(15, 41, 77, .8); /* Background color */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 30px; /* Add border radius */
+  width: 50%; /* Set a specific width */
+  margin: 0 auto; /* Center the navigation */
+}
+
+.trip-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.trip-nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  border-right: 1px solid #fff; /* Add border to separate items */
+  padding-right: 10px; /* Add padding to separate items */
+}
+
+.trip-nav ul li:last-child {
+  border-right: none; /* Remove border from last item */
+}
+
+.trip-nav ul li a {
+  text-decoration: none;
+  color: #fff; /* Adjust color as needed */
+  transition: color 0.3s; /* Add transition effect */
+}
+
+/* Change color and add underline on hover */
+.trip-nav ul li a:hover {
+  color: lightblue;
+}
+/* Search container styles */
+/* Search container styles */
+.search-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .search-container {
+      flex-direction: column;
+  }
+}
+
+
+/* Search container styles */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  border-top-right-radius:25%;
+    background-color: aliceblue;
+    border-top-left-radius:25%;
+
+}
+
+/* Search content styles */
+.search-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Destination input styles */
+.destination input {
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+/* Date picker styles */
+.date-picker {
+  display: flex;
+  margin-right: 10px;
+}
+
+.date-picker input {
+  padding: 10px;
+  width: 120px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+/* Room type dropdown styles */
+.room-type select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+/* Search button styles */
+.search-btn button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Background container styles */
+.background-container {
+  background-image: url('maldives-1993704_640.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+  background-size: cover; /* Scale the background image to cover the entire container */
+  background-position: center bottom; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  height: 50vh; /* Set the height of the container to fill the viewport height */
+}
+
+/* Confirmation section styles */
+.confirmation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.destination-image {
+  flex: 1;
+}
+
+.destination-image img {
+  width: 80%;
+  border-radius: 10px;
+}
+
+.confirmation-details {
+  flex: 1;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.confirmation-details h1 {
+  font-size: 24px;
+}
+
+.trip-details {
+  margin-bottom: 20px;
+}
+
+.trip-details h2 {
+  margin-bottom: 10px;
+}
+
+.confirmation-message p {
+  font-weight: bold;
+  color: green;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+}
